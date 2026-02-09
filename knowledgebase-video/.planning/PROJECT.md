@@ -12,17 +12,17 @@ The agent can explore the knowledge base the same way Claude Code explores codeb
 
 ### Validated
 
-These capabilities already exist in the codebase:
+Please check to make sure the following capabilities already exist in the codebase as they are needed for this phase of the project:
 
-- ✓ Chat interface with SSE streaming — existing
-- ✓ Document ingestion via Docling (PDF, DOCX, PPTX, HTML, images) — existing
-- ✓ Hybrid search (keyword + vector with RRF fusion) — existing
-- ✓ Document analysis sub-agent (loads full document into isolated context) — existing
-- ✓ Tool calling framework (search_documents, query_sales_database, web_search, analyze_document) — existing
-- ✓ Row-Level Security for per-user data isolation — existing
-- ✓ Supabase Auth with JWT verification — existing
-- ✓ Thread and message management — existing
-- ✓ Real-time ingestion status via Supabase Realtime — existing
+- Chat interface with SSE streaming
+- Document ingestion via Docling
+- Hybrid search (keyword + vector with RRF fusion)
+- Document analysis sub-agent (loads full document into isolated context)
+- Tool calling framework
+- Row-Level Security for per-user data isolation
+- Supabase Auth with JWT verification
+- Thread and message management
+- Real-time ingestion status via Supabase Realtime
 
 ### Active
 
@@ -50,13 +50,17 @@ These capabilities already exist in the codebase:
 
 ## Context
 
-**Existing Architecture**: React/Vite frontend + FastAPI backend + Supabase (Postgres with pgvector). Documents are ingested via Docling, chunked, embedded, and stored in `document_chunks` table. Currently no folder hierarchy — documents are flat per-user.
+**Existing Architecture**: 
+
+Please check to make sure the following capabilities already exist
+
+React/Vite frontend + FastAPI backend + Supabase (Postgres with pgvector). Documents are ingested via Docling, chunked, embedded, and stored in a database table. Currently no folder hierarchy — documents are flat per-user.
 
 **Key Difference from Claude Code**: Claude Code greps/globs raw source files. This knowledge base has PDFs, DOCX, XLSX that need extraction first. The tools search *extracted markdown content* in Supabase, not raw files.
 
 **Storage Model**: Documents stored in Supabase Storage bucket. Metadata and chunks in Postgres. New folder structure will be a Postgres table with parent_id for nesting. Full markdown stored alongside chunks for efficient grep/read.
 
-**Sub-agent Pattern**: Existing `analyze_document` sub-agent loads full document content into isolated context. Explorer sub-agent will follow similar pattern but with access to all KB tools.
+**Sub-agent Pattern**: Existing sub-agent loads full document content into isolated context. Explorer sub-agent will follow similar pattern but with access to all KB tools.
 
 ## Constraints
 

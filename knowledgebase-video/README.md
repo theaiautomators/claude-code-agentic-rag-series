@@ -80,7 +80,7 @@ This build picks up where Episode 1 left off. You have two options:
 The foundation includes:
 
 - React/Vite frontend + FastAPI backend
-- Supabase (Postgres with pgvector)
+- Supabase (Postgres with pgvector) — [self-host with Docker](https://supabase.com/docs/guides/self-hosting/docker) or use Supabase Cloud
 - Document ingestion via Docling
 - Hybrid search with RRF fusion
 - Tool calling framework

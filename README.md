@@ -8,6 +8,10 @@ A reference implementation and learning foundation for building **agentic RAG sy
 
 This project was built collaboratively with Claude Code across multiple video episodes, where each episode adds new capabilities. This public repository contains the **PRDs, prompts, and planning documents** used to build each episode.
 
+<p align="center">
+  <img src="./image.png" alt="Claude Code RAG Masterclass" width="600">
+</p>
+
 ## The Episodes
 
 | Episode | Title | What It Adds |
@@ -31,7 +35,7 @@ Advanced features include an Agent Skills system, a code sandbox for executing P
 ### Path 1: Build from Scratch
 The deepest learning experience. You're not starting with any scaffold—you're building the entire system yourself.
 
-**Get started:** Watch the [YouTube episodes](https://www.youtube.com/@theaiautomators), use the PRDs in this repo, and build everything with Claude Code. You have everything you need right here.
+**Get started:** Watch the [YouTube episodes](https://www.youtube.com/watch?v=4Tp6nPZa5is&list=PLmc6yUBIbca9ALRkJtz2Z4zLjkYXy1Y1n&pp=sAgC), use the PRDs in this repo, and build everything with Claude Code. You have everything you need right here.
 
 ### Path 2: Fork and Extend
 Start from our codebase and build on top. Merge upstream changes occasionally, or use the PRDs from this repo to add future features independently.
@@ -62,7 +66,7 @@ Clone the repo, spin it up, and use it as-is. Make minor changes (branding, conf
 
 ## Resources
 
-- [YouTube Masterclass](https://www.youtube.com/@theaiautomators) — Original video series
+- [YouTube Masterclass](https://www.youtube.com/watch?v=xgPWCuqLoek&t=470s&pp=0gcJCa4KAYcqIYzv) — Original video series
 - [The AI Automators](https://www.theaiautomators.com/) — Community access
 
 ## Community
